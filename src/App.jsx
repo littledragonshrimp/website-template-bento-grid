@@ -1,8 +1,9 @@
 
-import Navbar from '../components/Navbar'
-import Landing from '../components/Landing'
-import Broken from '../components/Broken'
-import './App.scss'
+import Navbar from '../src/components/Navbar'
+import Landing from '../src/components/Landing'
+import Broken from '../src/components/Broken'
+import Footer from './components/Footer'
+import '../src/styles/App.scss'
 
 function App() {
   let component
@@ -29,6 +30,7 @@ function App() {
     <>
       <Navbar />
       <Landing />
+      <Footer />
     </>
   )
 }
