@@ -1,82 +1,88 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: lightseagreen;
+  background-color: lightseagreen;
 }
 
 //nav section
 nav {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: rgb(39, 119, 230);
-    padding: 10px;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: rgb(39, 119, 230);
+  padding: 10px;
+  color: white;
 
-    top: sticky;
+  top: sticky;
 
-    .nav-divider {
-        margin-right: -.7rem;
-        margin-left: -.7rem;
+  .nav-divider {
+    margin-right: -0.7rem;
+    margin-left: -0.7rem;
+  }
+
+  .dropdown-list,
+  .nav-dropdown {
+    display: none;
+  }
+
+  .about-dropdown:hover {
+    font-size: 0;
+    background-color: green;
+
+    .dropdown-list {
+      display: block;
     }
 
-    .dropdown-list,
     .nav-dropdown {
-        display: none;
+      display: flex;
+      flex-direction: row;
     }
+  }
 
-    .about-dropdown:hover {
-        font-size: 0;
-        background-color: green;
+  .reserveLogo {
+    margin-top: 5%;
+    height: 4rem;
+    background-color: white;
+  }
 
+  h1 {
+    height: 100%;
+    font-size: 3rem;
+    margin: 1rem;
+    background-color: inherit;
+  }
 
-        .dropdown-list {
-            display: block;
+  ul {
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+  }
 
-        }
+  li {
+    margin: 2rem 0.3rem 2rem 0.3rem;
+    font-size: 1.6rem;
+    background-color: inherit;
+    padding: 0 1rem 0 1rem;
+    cursor: pointer;
 
-        .nav-dropdown {
-            display: flex;
-            flex-direction: row;
-        }
+    a {
+      text-decoration: none;
+      color: inherit;
     }
+  }
 
-    h1 {
-        height: 100%;
-        font-size: 3rem;
-        margin: 1rem;
-        background-color: inherit;
-    }
-
-   
-
-    ul {
-        background-color: inherit;
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: space-evenly;
-    }
-
-    li {
-        margin: 2rem .3rem 2rem .3rem;
-        font-size: 1.6rem;
-        background-color: inherit;
-        padding: 0 1rem 0 1rem;
-        cursor: pointer;
-    }
-
-    li:hover {
-
-        scale: 1.2;
-        padding: 0 1rem 0 1rem;
-        transition: .3s;
-        border-radius: .2rem;
-        height: stretch;
-        color: lightblue;
-    }
+  li:hover {
+    scale: 1.2;
+    padding: 0 1rem 0 1rem;
+    transition: 0.3s;
+    border-radius: 0.2rem;
+    height: stretch;
+    color: lightblue;
+  }
 }

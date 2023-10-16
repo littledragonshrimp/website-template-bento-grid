@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: lightseagreen;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: rgb(39, 119, 230);
+  padding: 10px;
+  color: white;
+  top: sticky;
+}
+nav .nav-divider {
+  margin-right: -0.7rem;
+  margin-left: -0.7rem;
+}
+nav .dropdown-list,
+nav .nav-dropdown {
+  display: none;
+}
+nav .about-dropdown:hover {
+  font-size: 0;
+  background-color: green;
+}
+nav .about-dropdown:hover .dropdown-list {
+  display: block;
+}
+nav .about-dropdown:hover .nav-dropdown {
+  display: flex;
+  flex-direction: row;
+}
+nav .reserveLogo {
+  margin-top: 5%;
+  height: 4rem;
+  background-color: white;
+}
+nav h1 {
+  height: 100%;
+  font-size: 3rem;
+  margin: 1rem;
+  background-color: inherit;
+}
+nav ul {
+  background-color: inherit;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+nav li {
+  margin: 2rem 0.3rem 2rem 0.3rem;
+  font-size: 1.6rem;
+  background-color: inherit;
+  padding: 0 1rem 0 1rem;
+  cursor: pointer;
+}
+nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+nav li:hover {
+  scale: 1.2;
+  padding: 0 1rem 0 1rem;
+  transition: 0.3s;
+  border-radius: 0.2rem;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
+  color: lightblue;
+}/*# sourceMappingURL=App.css.map */

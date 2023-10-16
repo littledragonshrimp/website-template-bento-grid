@@ -8,6 +8,7 @@ function LandingBlock({ title, content, link, imgSrc, blockNumber }) {
                 <h2>{title}</h2>
                 <p>{content}</p>
             </span>
+
             <img src={imgSrc} alt=""></img>
         </a>
     )
