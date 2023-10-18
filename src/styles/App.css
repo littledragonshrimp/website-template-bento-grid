@@ -4,22 +4,16 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  background-color: lightseagreen;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  background-color: rgb(39, 119, 230);
-  padding: 10px;
+  background-color: #015fc1;
   color: white;
-  top: sticky;
 }
 nav .nav-divider {
-  margin-right: -0.7rem;
-  margin-left: -0.7rem;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
 }
 nav .dropdown-list,
 nav .nav-dropdown {
@@ -40,6 +34,7 @@ nav .reserveLogo {
   margin-top: 5%;
   height: 4rem;
   background-color: white;
+  border-radius: 0.1rem;
 }
 nav h1 {
   height: 100%;
@@ -48,6 +43,7 @@ nav h1 {
   background-color: inherit;
 }
 nav ul {
+  visibility: hidden;
   background-color: inherit;
   display: flex;
   flex-direction: row;
@@ -55,10 +51,11 @@ nav ul {
   justify-content: space-evenly;
 }
 nav li {
-  margin: 2rem 0.3rem 2rem 0.3rem;
-  font-size: 1.6rem;
+  margin: 2rem 0 2rem 0;
+  margin-left: 1rem;
+  margin-right: 3rem;
+  font-size: 1.7rem;
   background-color: inherit;
-  padding: 0 1rem 0 1rem;
   cursor: pointer;
 }
 nav li a {
@@ -66,12 +63,60 @@ nav li a {
   color: inherit;
 }
 nav li:hover {
-  scale: 1.2;
-  padding: 0 1rem 0 1rem;
+  scale: 1.1;
   transition: 0.3s;
   border-radius: 0.2rem;
   height: -webkit-fill-available;
   height: -moz-available;
   height: stretch;
   color: lightblue;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+  margin-bottom: 0.4rem;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger:active {
+  scale: 1.2;
+}
+
+.burger {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: white;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+
+@media screen and (min-width: 800px) {
+  .hamburger {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 800px) {
+  nav .reserveLogo {
+    margin-top: 2.5%;
+  }
+  nav ul li {
+    visibility: visible;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=App.css.map */

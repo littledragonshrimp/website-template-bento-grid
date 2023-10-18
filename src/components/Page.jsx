@@ -13,6 +13,10 @@ function Page({ pageType }) {
       component = <About />;
       break;
 
+    case "Team":
+      component = <Team />;
+      break;
+
     case "Portfolio":
       component = <Portfolio />;
       break;

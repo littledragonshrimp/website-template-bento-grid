@@ -2,6 +2,7 @@ import React from "react";
 
 import About from "../pages/About";
 import Team from "../pages/Team";
+import Hamburger from "./Hamburger";
 
 import logo from "../assets/images/reserveLogo.png";
 
@@ -30,9 +31,17 @@ function Navbar() {
             Donate
           </a>
         </li>
-        <li className="nav-divider">|</li>
+        {/* <li className="nav-divider">|</li> */}
         <li>Contact</li>
       </ul>
+      {/* 
+      <input
+        type="image"
+        class="hamburger"
+        onclick={openMenu()}
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png"
+      /> */}
+      <Hamburger />
     </nav>
   );
 }
