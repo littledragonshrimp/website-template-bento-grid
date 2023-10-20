@@ -7,6 +7,7 @@ function Portfolio() {
   return (
     <>
       <div className="portfolioContainer">
+        <h1>Portfolio</h1>
         <RCF1 />
         <RCF2 />
         <Sold />

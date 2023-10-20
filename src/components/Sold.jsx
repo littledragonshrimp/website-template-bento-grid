@@ -54,21 +54,26 @@ const RCF1Blocks = [
 
 function Sold({ title, content, link, imgSrc, blockNumber }) {
   return (
-    <div className="landing-container">
-      {RCF1Blocks.map((block, i) => {
-        return (
-          <>
-            <RCFBlock
-              title={block.title}
-              content={block.content}
-              link={block.link}
-              imgSrc={block.imgSrc}
-              blockNumber={i + 1}
-            />
-          </>
-        );
-      })}
-    </div>
+    <>
+      <h2 className="portfolio-subtitle">Sold Properties</h2>
+      <div className="landing-container">
+        {RCF1Blocks.map((block, i) => {
+          return (
+            <>
+              <RCFBlock
+                title={block.title}
+                address={block.address}
+                sqFt={block.sqFt}
+                content1={block.content1}
+                link={block.link}
+                imgSrc={block.imgSrc}
+                blockNumber={i + 1}
+              />
+            </>
+          );
+        })}
+      </div>
+    </>
   );
 }
 
