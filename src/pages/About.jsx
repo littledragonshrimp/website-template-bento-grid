@@ -61,7 +61,8 @@ function About() {
   ];
   return (
     <>
-      <div className="landing-container">
+      <Difference />
+      {/* <div className="landing-container">
         {landingBlocks.map((block, i) => {
           return (
             <>
@@ -75,7 +76,7 @@ function About() {
             </>
           );
         })}
-      </div>
+      </div> */}
     </>
   );
 }

@@ -120,6 +120,31 @@ nav {
   transition: all 0.3s linear;
 }
 
+//about section
+.differenceContainer {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin: 2rem auto 2rem auto;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  p {
+    width: 90%;
+    margin: auto;
+  }
+  .valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    list-style: none;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .hamburger {
     visibility: hidden;
@@ -137,6 +162,15 @@ nav {
         margin-right: 2rem;
         font-size: 0.8rem;
       }
+    }
+  }
+
+  .differenceContainer {
+    width: 80%;
+    margin: auto;
+    h3 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
     }
   }
 }

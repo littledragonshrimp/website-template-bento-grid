@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Team from "./pages/Team";
 import Footer from "./components/Footer";
-import Impact from "./pages/Impact";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
 import Programs from "./pages/Programs";
 import "../src/styles/App.scss";
 
@@ -30,8 +31,8 @@ function App() {
       component = <Programs />;
       break;
 
-    case "/impact":
-      component = <Impact />;
+    case "/portfolio":
+      component = <Portfolio />;
       break;
 
     case "/contact":
@@ -46,8 +47,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Landing />
-      <Difference />
+      {component}
       <Footer />
     </>
   );

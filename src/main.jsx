@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import About from "./pages/About.jsx";
 import Team from "./pages/Team.jsx";
-import Impact from "./pages/Impact.jsx";
+import Impact from "./pages/Portfolio.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +13,18 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
+  },
+  {
+    path: "/team",
+  },
+  {
+    path: "/portfolio",
+  },
+  {
+    path: "/programs",
+  },
+  {
+    path: "/contact",
   },
 ]);
 

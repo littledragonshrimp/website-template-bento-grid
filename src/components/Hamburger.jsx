@@ -5,7 +5,7 @@ function Hamburger() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   const handleClick = (e) => {
-    setHamburgerOpen(!hamburgerOpen);
+    console.log("handle clicked!");
   };
 
   //   const handleClick = (e) => {

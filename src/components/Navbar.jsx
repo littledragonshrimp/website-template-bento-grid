@@ -3,6 +3,7 @@ import React from "react";
 import About from "../pages/About";
 import Team from "../pages/Team";
 import Hamburger from "./Hamburger";
+import Portfolio from "../pages/Portfolio";
 
 import logo from "../assets/images/reserveLogo.png";
 
@@ -24,7 +25,7 @@ function Navbar() {
         </li>
 
         <li>
-          <a href="/impact">Impact</a>
+          <a href="/portfolio">Portfolio</a>
         </li>
         <li>
           <a href="https://fundraise.givesmart.com/f/473d/n?vid=zs1p6">
@@ -32,7 +33,9 @@ function Navbar() {
           </a>
         </li>
         {/* <li className="nav-divider">|</li> */}
-        <li>Contact</li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
       </ul>
       {/* 
       <input
